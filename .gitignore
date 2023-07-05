@@ -1,3 +1,4 @@
 .idea
 algorithm-practice-questions.iml
 out
+.gitignore
