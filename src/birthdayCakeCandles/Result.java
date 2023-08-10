@@ -1,4 +1,4 @@
-package birthdayCakeCandles;
+package java.birthdayCakeCandles;
 import java.util.*;
 class Result {
 

@@ -1,4 +1,4 @@
-package compareTheTriplets;
+package java.compareTheTriplets;
 import java.util.*;
 class Result {
 

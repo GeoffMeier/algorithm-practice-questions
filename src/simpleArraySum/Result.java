@@ -1,4 +1,4 @@
-package simpleArraySum;
+package java.simpleArraySum;
 
 import java.io.*;
 import java.math.*;

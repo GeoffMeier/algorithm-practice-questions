@@ -1,4 +1,4 @@
-package diagonalDifference;
+package java.diagonalDifference;
 import java.util.*;
 class Result {
 

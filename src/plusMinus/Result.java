@@ -1,4 +1,4 @@
-package plusMinus;
+package java.plusMinus;
 import java.util.*;
 class Result {
 

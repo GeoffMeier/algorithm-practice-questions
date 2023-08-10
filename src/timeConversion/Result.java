@@ -1,6 +1,7 @@
-package timeConversion;
+package java.timeConversion;
 import java.util.*;
 class Result {
+
 
     /*
      * Complete the 'timeConversion' function below.

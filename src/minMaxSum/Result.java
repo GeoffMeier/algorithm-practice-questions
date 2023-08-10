@@ -1,4 +1,4 @@
-package minMaxSum;
+package java.minMaxSum;
 import java.util.*;
 class Result {
 
