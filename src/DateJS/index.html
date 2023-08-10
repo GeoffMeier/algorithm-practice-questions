@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function timeInWords(h, m) {
+    // Write your code here
+
+    {
+        let nums = [ "zero", "one", "two", "three", "four",
+                            "five", "six", "seven", "eight", "nine",
+                            "ten", "eleven", "twelve", "thirteen",
+                            "fourteen", "fifteen", "sixteen", "seventeen",
+                            "eighteen", "nineteen", "twenty", "twenty one",
+                            "twenty two", "twenty three", "twenty four",
+                            "twenty five", "twenty six", "twenty seven",
+                            "twenty eight", "twenty nine",
+                        ];
+        
+        if (m == 0)
+            document.write(nums[h] + " o' clock " + "</br>");
+        
+        else if (m == 1)
+            document.write("one minute past " + nums[h] + "</br>");
+        
+        else if (m == 59)
+            document.write("one minute to " +
+                                nums[(h % 12) + 1] + "</br>");
+        
+        else if (m == 15)
+            document.write("quarter past " + nums[h] + "</br>");
+        
+        else if (m == 30)
+            document.write("half past " + nums[h] + "</br>");
+        
+        else if (m == 45)
+            document.write("quarter to " + nums[(h % 12) + 1] + "</br>");
+        
+        else if (m <= 30)
+            document.write( nums[m] + " minutes past " + nums[h] + "</br>");
+        
+        else if (m > 30)
+            document.write( nums[60 - m] + " minutes to " + nums[(h % 12) + 1] + "</br>");
+    }
+
+//     let oneToTwelve = {1 : 'one' ,2: 'two',  3: 'three' ,4: 'four' , 5: 'five', 6: 'six', 7 : 'seven', 8: 'eight', 9: 'nine', 10: 'ten', 11: 'eleven', 12: 'twelve' };
+    
+//     let minterms = {15: 'quarter', 45: 'quarter', 30:"half"};
+//     let result ;
+//     let min;
+//     let hour;
+
+//     for(const[key,value] of Object.entries(oneToTwelve)){
+//   if(key === h){
+//   const newHour =hour = value;
+//   } hour = newHour}
+
+// for(const[key,value] of Object.entries(minterms)){
+//     if(key === m){
+//         min = value
+//     }
+// }
+//     if(m === 0){
+//         result = `${hour} o'clock`
+//     }
+//     if(m === 1){
+//         result = `one minute past ${hour}`
+//     }
+//     if(m === 15){
+//         result = `${min} past ${hour}`
+//     }
+//     if(m>1 && m<=12){
+//         for(const[key,value] of Object.entries(oneToTwelve)){
+//   if(key === m){
+//   min = value;
+//   } }
+//   result = `${min} minutes past ${hour}`
+//     }
+//     return result
+    
+//     if(m == 0){
+//   for(const[key,value] of Object.entries(oneToTwelve)){
+    
+//     if(key == h){
+//         result = (`${value} o'clock`) 
+//         }
+//     }
+//   return result;
+//     }
+//     if(m > 0 && m <= 30){
+//         if(m === 15){
+//             for(const[key,value] of Object.entries(oneToTwelve)){
+    
+//     if(key == h){
+//         result = 'quarter past ' + value
+//         }
+//     }
+//             return result;
+//         }
+//     }
+   
+   
+}
+
+console.log(timeInWords(7,1))
+    
+        
+    </script>
+</body>
+</html>
