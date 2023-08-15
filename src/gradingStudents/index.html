@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function gradingStudents(grades) {
+    // Write your code here
+      // Write your code here
+  let finalGrade;
+  let currentGrade;
+  let id;
+  let finalGrades =[]
+    for(let i = 0; i <= grades.length -1; i++){
+        currentGrade = grades[i];
+        finalGrade = currentGrade;
+        id = i;
+
+        
+        
+        if((currentGrade + 2) % 5 == 0){
+             finalGrade = currentGrade + 2
+            
+        }
+        if((currentGrade + 1) % 5 == 0){
+           finalGrade = currentGrade + 1
+            
+        }
+        if(currentGrade < 38){
+         finalGrade = currentGrade;
+            
+        }  
+        
+        
+        
+        finalGrades.push(finalGrade);
+}
+    return finalGrades
+}
+    
+    
+
+    </script>
+    
+</body>
+</html>
