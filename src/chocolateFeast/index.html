@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function chocolateFeast(n, c, m) {
+    // Write your code here
+    
+let numOfBars = Math.floor(n/c);
+let numOfWrappers = numOfBars;
+let extraBars
+let extraWrapper;
+while(numOfWrappers >= m){
+    
+    
+        extraBars = Math.floor(numOfWrappers/ m);
+        numOfBars += extraBars
+        
+        extraWrapper = numOfWrappers % m;
+        numOfWrappers = extraBars + extraWrapper;
+
+
+    
+   
+       
+     
+
+   
+   
+}
+return numOfBars
+
+
+}
+
+console.log(chocolateFeast(7,3,2));
+    </script>
+    
+</body>
+</html>
