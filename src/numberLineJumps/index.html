@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function kangaroo(x1, v1, x2, v2) {
+    // Write your code here
+        let result; 
+        let kangarooOne = x1;
+        
+        let kangarooTwo = x2;
+
+        while(kangarooOne !== kangarooTwo){
+            kangarooOne += v1;
+            kangarooTwo += v2;
+            if(kangarooOne > 10000 || kangarooTwo > 10000){
+                result = 'NO'
+                stop();
+                break;
+            }
+            if(kangarooOne === kangarooTwo){
+                result = 'YES'
+            }
+        }
+        return result;
+}
+console.log(kangaroo(0,2,5,3));
+    </script>
+</body>
+</html>
